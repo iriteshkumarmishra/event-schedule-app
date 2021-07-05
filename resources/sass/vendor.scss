@@ -1,0 +1,31 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+@import '~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar';
+
+// Bootstrap setup
+@import '~bootstrap/scss/functions';
+
+// Variables Overrides
+@import 'variables';
+
+// Bootstrap core
+@import '~bootstrap/scss/bootstrap';
+
+
+@import 'bootstrap-theme/bootstrap-theme';
+
+@import 'bootstrap-theme/bootstrap-theme';
+
+//@import 'pagebuilder';
+
+/* icon font path, required */
+//$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

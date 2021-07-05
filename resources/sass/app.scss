@@ -1,0 +1,318 @@
+// Variables
+@import 'variables';
+body {
+    background: #FFF; // for front end the body background should be white.
+}
+
+[v-cloak],
+[v-cloak]>* {
+    display: none !important;
+}
+
+#app {
+    min-height: calc(100% - 57px);
+}
+
+.navbar-logo {
+    width: 14rem;
+}
+
+.course-thumbnail {
+    width: 100%;
+}
+
+.el-select__tags .el-select__input {
+    margin-left: 30px;
+}
+
+.col {
+    flex-basis: auto;
+}
+
+.display-in-builder,
+.display-in-builder * {
+    display: none;
+}
+
+@media (min-width: $md) {
+    .course-thumbnail {
+        width: 200px;
+    }
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.u-timeline.module-sequence {
+    border-left-width: 6px;
+    border-color: $gray-100;
+}
+
+.u-timeline.module-sequence .u-timeline__item::before {
+    display: none;
+}
+
+// .module .sequence-number {
+//     position: absolute;
+//     left: calc(-2.4rem / 2 - 2px / 2);
+//     top: 1rem;
+//     width: 2rem;
+//     height: 2rem;
+//     background-color: $gray-100;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-weight: bold;
+//     border-radius: 4px;
+// }
+
+// .module {
+//     padding: 1rem;
+//     border-radius: 4px;
+//     border: 1px solid $gray-100;
+//     background: $gray-100;
+// }
+
+// .module:after,
+// .module:before {
+//     content: '';
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: 1.5rem;
+//     left: 16px;
+//     width: 0;
+//     height: 0;
+//     border-style: solid;
+// }
+
+// .module.bg-white:after {
+//     top: 15px;
+//     border-color: transparent $white transparent transparent;
+//     border-width: 14px 14px 14px 0;
+//     left: 17px;
+// }
+
+// .module.bg-white:before {
+//     top: 15px;
+//     border-color: transparent $white transparent transparent;
+//     border-width: 14px 14px 14px 0;
+// }
+
+// .module.bg-white:before {
+//     top: 15px;
+//     border-color: transparent $white transparent transparent;
+//     border-width: 14px 14px 14px 0;
+// }
+
+.hover-bg:hover {
+    background: $gray-100;
+}
+
+@media (max-width: $sm) {
+    .responsive-drawer {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: $md) and (min-width: $sm) {
+    .responsive-drawer {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: $sm) {
+    .responsive-dialog {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: $md) and (min-width: $sm) {
+    .responsive-dialog {
+        width: 80% !important;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $black;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.small-divider {
+    height: 4px;
+    width: 30px;
+}
+
+.medium-divider {
+    height: 4px;
+    width: 60px;
+}
+
+.vertical-divider {
+    height: 22px;
+    width: 4px;
+}
+
+.el-button {
+    outline: 0 !important;
+}
+
+.el-button .el-icon-plus {
+    margin-right: 10px;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+.password-input .el-input-group__append {
+    background-color: $transparent !important;
+    color: $gray-600 !important;
+    cursor: pointer;
+}
+
+.el-form--label-top .el-form-item__label {
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+}
+
+.slug-input.el-input .el-input__inner {
+    width: 200px;
+}
+
+.input-with-select .el-input-group__prepend .el-input {
+    width: 170px;
+}
+
+.input-with-select .el-input-group__prepend {
+    background-color: $white;
+    color: $dark;
+}
+
+.table.header-primary th {
+    background-color: $primary;
+    color: $white;
+}
+
+.table.header-primary {
+    border: 1px solid $gray-200;
+}
+
+.table tbody tr.selected {
+    background-color: $gray-100;
+}
+
+.table th.sortable {
+    cursor: pointer;
+}
+
+.table th.sortable:after {
+    content: "\F0DC";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+}
+
+.table th.sortable.asc:after {
+    content: "\F0DE";
+}
+
+.table th.sortable.desc:after {
+    content: "\F0DD";
+}
+
+@media screen and (max-width: 600px) {
+    .table-responsive table {
+        border: 0;
+    }
+    .table-responsive table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .table-responsive table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    .table-responsive table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    .table-responsive table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .table-responsive table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/*** Log In/Sign up page ***/
+
+.separator span {
+    position: absolute;
+    color: #d3dde6;
+    left: 44%;
+    top: -15px;
+    padding: 7px 14px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 0.9px;
+}
+
+#signUpButton {
+    color: #888;
+    border: 1px solid #ddd;
+    font-weight: 600;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#signUpButton:hover {
+    opacity: 0.6;
+}
+
+#signUpButton .fa-plus {
+    margin-right: 10px;
+    font-size: 0.7rem;
+    vertical-align: middle;
+    color: #888;
+    position: absolute;
+    left: 17px;
+    top: 35%;
+}
+
+.content img,
+.content video {
+    width: 100%;
+}
+
+.el-drawer__body {
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+// to correct unexpected shrinking of select boxes
+.el-input--small .el-input__inner {
+    min-height: 32px;
+}
+
+.groupbuybanner{
+    background-color: #f5f7ff;
+    border-color: #c4d0ff;
+    color: #8299f5;
+}
